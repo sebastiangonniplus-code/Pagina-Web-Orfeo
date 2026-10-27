@@ -1,54 +1,442 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="css/styles.css">
-    <title>Carlos Emmanuel Flamenco | Clases de música, shows y sonido</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos Emmanuel Flamenco · Guitarra, bajo y ukelele · Músico y profesor</title>
+  <meta name="description" content="Carlos Emmanuel Flamenco: músico, guitarrista, bajista y profesor. Clases de guitarra, bajo eléctrico y ukelele (presenciales o virtuales) y propuestas musicales para eventos." />
+  <meta name="theme-color" content="#0f0d0b" />
+
+  <!-- Compartir en redes (completar og:url y og:image cuando haya dominio y foto) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Carlos Emmanuel Flamenco · Músico y profesor" />
+  <meta property="og:description" content="Clases de guitarra, bajo y ukelele. Proyectos musicales y propuestas para eventos." />
+  <meta property="og:locale" content="es_AR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- <meta property="og:image" content="https://TU-DOMINIO/assets/img/og.jpg" /> -->
+  <!-- <meta property="og:url" content="https://TU-DOMINIO/" /> -->
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,800;1,6..96,400;1,6..96,600&family=Manrope:wght@300;400;500;600;800&display=swap" />
+  <script>document.documentElement.className += " js";</script>
+  <link rel="stylesheet" href="styles.css?v=20261026" />
 </head>
 <body>
-   <header class="hero">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
 
-    <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="Logo del taller">
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#clases">Clases</a></li>
-            <li><a href="#shows">Shows</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#inicio" aria-label="Carlos Emmanuel Flamenco, inicio">
+      <span class="nav-mark" aria-hidden="true"></span>
+      <span>C. E. Flamenco</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Principal">
+      <a href="#clases">Clases</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#en-vivo">En vivo</a>
+      <a href="#contratar">Contratar</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-sm btn-solid nav-cta" href="#contacto" data-wa="Hola Carlos, quiero hacerte una consulta.">WhatsApp</a>
     </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
 
-    <div class="hero-content">
-        <p class="hero-subtitle">MÚSICA · CLASES · SHOWS · SONIDO</p>
+  <main id="contenido">
 
-        <h1>La música se vive.</h1>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-vinyl" aria-hidden="true"><div class="vinyl"><i></i></div></div>
 
-        <p class="hero-description">
-            Clases de guitarra, bajo y ukelele.
-            Música en vivo y sonido para eventos.
-        </p>
+      <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow"><span class="dot"></span> Músico · Profesor · Guitarra, bajo y ukelele</p>
 
-        <a href="#contacto" class="hero-button">
-            Contactar
-        </a>
+        <h1 class="hero-name">
+          <span class="line l1">Carlos</span>
+          <span class="line l2"><em>Emmanuel</em></span>
+          <span class="line l3">Flamenco</span>
+        </h1>
+
+        <figure class="ph hero-photo" data-slot="hero-retrato" data-ratio="4/5" data-parallax="0.06" data-label="Retrato o foto en vivo de Carlos" data-note="Proporción 4:5 · vertical">
+        </figure>
+
+        <div class="hero-copy">
+          <p class="hero-lead">Toco, enseño y subo al escenario lo que me mueve: la música en vivo.</p>
+          <p class="hero-sub">Clases de guitarra, bajo eléctrico y ukelele —presenciales o virtuales— y proyectos musicales para escuchar, descubrir y contratar.</p>
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, quiero consultar por clases de música.">Consultar clases <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#proyectos">Explorar proyectos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Guitarra</span><span>Bajo eléctrico</span><span>Ukelele</span><span>Alud</span><span>Hurlingham Blues Society</span><span>Memphis Rockers Tribute to Elvis</span><span>Dúos</span><span>Eventos</span>
+          <span>Guitarra</span><span>Bajo eléctrico</span><span>Ukelele</span><span>Alud</span><span>Hurlingham Blues Society</span><span>Memphis Rockers Tribute to Elvis</span><span>Dúos</span><span>Eventos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. PRESENTACIÓN ============ -->
+    <section class="bio" id="carlos">
+      <figure class="ph bio-photo reveal" data-slot="bio-retrato" data-ratio="3/4" data-parallax="-0.05" data-label="Retrato profesional" data-note="Proporción 3:4 · vertical"></figure>
+
+      <div class="bio-text">
+        <p class="eyebrow reveal"><span class="num">01</span> El músico detrás de los instrumentos</p>
+        <h2 class="display reveal">Un músico que <em>también enseña</em>.</h2>
+        <p class="lead reveal">Carlos Emmanuel Flamenco es músico, guitarrista, bajista y profesor de música. Da clases de guitarra, bajo eléctrico y ukelele, y participa en proyectos musicales para escenarios y eventos.</p>
+
+        <div class="todo reveal" role="note">
+          <span class="todo-tag">Pendiente</span>
+          <p>Acá va la biografía real de Carlos: cómo empezó, su formación, sus influencias y su trayectoria. Se completa con datos confirmados por él.</p>
+        </div>
+
+        <dl class="facts reveal">
+          <div><dt>Instrumentos</dt><dd>Guitarra · Bajo · Ukelele</dd></div>
+          <div><dt>Enseñanza</dt><dd>Presencial o virtual</dd></div>
+          <div><dt>Escenario</dt><dd>Bandas, dúos y proyectos</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ 3. CLASES ============ -->
+    <section class="classes" id="clases">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><span class="num">02</span> Clases particulares</p>
+        <h2 class="display">Tres instrumentos,<br /><em>un mismo oído</em>.</h2>
+        <p class="lead">Aprendé a tu ritmo, en persona o a distancia. Cada propuesta se adapta a quien llega: de la primera nota a la interpretación.</p>
+      </header>
+
+      <!-- Guitarra -->
+      <article class="class class--a reveal" id="clase-guitarra">
+        <span class="class-num" aria-hidden="true">01</span>
+        <figure class="ph class-img" data-slot="clase-guitarra" data-ratio="4/5" data-label="Carlos tocando guitarra" data-note="Foto o detalle de manos · 4:5"></figure>
+        <div class="class-body">
+          <h3>Guitarra</h3>
+          <p>Acordes, ritmo, técnica y repertorio. Un camino claro para tocar las canciones que querés y entender lo que hacés.</p>
+          <ul class="chips" aria-label="Modalidades disponibles"><li>Presencial</li><li>Virtual</li></ul>
+          <details class="more">
+            <summary>Niveles, estilos y condiciones</summary>
+            <ul class="todo-list">
+              <li>Niveles: <b>por definir</b></li>
+              <li>Estilos: <b>por definir</b></li>
+              <li>Duración y frecuencia: <b>por definir</b></li>
+              <li>Precio: <b>por definir</b></li>
+            </ul>
+          </details>
+          <div class="class-cta">
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, quiero aprender guitarra. ¿Me contás cómo son las clases y qué disponibilidad tenés?">Quiero aprender guitarra</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bajo -->
+      <article class="class class--b reveal" id="clase-bajo">
+        <span class="class-num" aria-hidden="true">02</span>
+        <div class="class-body">
+          <h3>Bajo eléctrico</h3>
+          <p>Groove, tiempo y sostén. Aprendé a ser el pulso de una banda y a disfrutar de las cuatro cuerdas.</p>
+          <ul class="chips" aria-label="Modalidades disponibles"><li>Presencial</li><li>Virtual</li></ul>
+          <details class="more">
+            <summary>Niveles, estilos y condiciones</summary>
+            <ul class="todo-list">
+              <li>Niveles: <b>por definir</b></li>
+              <li>Estilos: <b>por definir</b></li>
+              <li>Duración y frecuencia: <b>por definir</b></li>
+              <li>Precio: <b>por definir</b></li>
+            </ul>
+          </details>
+          <div class="class-cta">
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, quiero consultar por clases de bajo. ¿Qué disponibilidad tenés?">Consultar clases de bajo</a>
+          </div>
+        </div>
+        <figure class="ph class-img" data-slot="clase-bajo" data-ratio="1/1" data-label="Carlos tocando bajo" data-note="Foto o detalle de manos · 1:1"></figure>
+      </article>
+
+      <!-- Ukelele -->
+      <article class="class class--c reveal" id="clase-ukelele">
+        <span class="class-num" aria-hidden="true">03</span>
+        <figure class="ph class-img" data-slot="clase-ukelele" data-ratio="5/4" data-label="Carlos tocando ukelele" data-note="Foto o detalle de manos · 5:4"></figure>
+        <div class="class-body">
+          <h3>Ukelele</h3>
+          <p>El instrumento más amable para empezar. Cuatro cuerdas, canciones desde la primera clase y mucho disfrute.</p>
+          <ul class="chips" aria-label="Modalidades disponibles"><li>Presencial</li><li>Virtual</li></ul>
+          <details class="more">
+            <summary>Niveles, estilos y condiciones</summary>
+            <ul class="todo-list">
+              <li>Niveles: <b>por definir</b></li>
+              <li>Estilos: <b>por definir</b></li>
+              <li>Duración y frecuencia: <b>por definir</b></li>
+              <li>Precio: <b>por definir</b></li>
+            </ul>
+          </details>
+          <div class="class-cta">
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, quiero empezar con el ukelele. ¿Cómo son las clases?">Empezar con el ukelele</a>
+          </div>
+        </div>
+      </article>
+
+      <p class="classes-foot reveal">¿No sabés por cuál empezar? <a class="link" href="#contacto" data-wa="Hola Carlos, quiero consultar disponibilidad para clases. No sé bien con qué instrumento empezar.">Consultar disponibilidad</a></p>
+    </section>
+
+    <!-- ============ 4. MODALIDADES ============ -->
+    <section class="modes" id="modalidades">
+      <header class="sec-head sec-head--row reveal">
+        <div>
+          <p class="eyebrow"><span class="num">03</span> Modalidades</p>
+          <h2 class="display">¿Cómo te <em>conviene</em> aprender?</h2>
+        </div>
+        <div class="seg" role="tablist" aria-label="Modalidad de clases">
+          <button role="tab" id="tab-pres" aria-selected="true" aria-controls="panel-pres" class="seg-btn is-on">Presencial</button>
+          <button role="tab" id="tab-virt" aria-selected="false" aria-controls="panel-virt" class="seg-btn" tabindex="-1">Virtual</button>
+        </div>
+      </header>
+
+      <div class="mode-panels reveal">
+        <div class="mode-panel is-on" role="tabpanel" id="panel-pres" aria-labelledby="tab-pres">
+          <div class="mode-big" aria-hidden="true">En<br />persona</div>
+          <div class="mode-info">
+            <h3>Clases presenciales</h3>
+            <p>Contacto directo con el instrumento y con el profesor: corrección inmediata de postura, manos y sonido.</p>
+            <ul class="todo-list">
+              <li>Ubicación: <b>por definir</b></li>
+              <li>Cómo es cada clase: <b>por definir</b></li>
+              <li>Condiciones (instrumento, horarios): <b>por definir</b></li>
+            </ul>
+            <p class="fit"><b>Puede convenirte si…</b> preferís el trato cara a cara y vivís cerca del lugar de clases.</p>
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, me interesan las clases presenciales. ¿Dónde y cuándo son?">Consultar clases presenciales</a>
+          </div>
+        </div>
+
+        <div class="mode-panel" role="tabpanel" id="panel-virt" aria-labelledby="tab-virt" hidden>
+          <div class="mode-big" aria-hidden="true">A<br />distancia</div>
+          <div class="mode-info">
+            <h3>Clases virtuales</h3>
+            <p>Aprendé desde tu casa, sin traslados y con la flexibilidad de coordinar horarios a distancia.</p>
+            <ul class="todo-list">
+              <li>Plataforma: <b>por definir</b></li>
+              <li>Cómo se desarrollan: <b>por definir</b></li>
+              <li>Qué necesitás (conexión, instrumento, dispositivo): <b>por definir</b></li>
+            </ul>
+            <p class="fit"><b>Puede convenirte si…</b> estás lejos, tenés poco tiempo para viajar o preferís estudiar en tu propio espacio.</p>
+            <a class="btn btn-solid" href="#contacto" data-wa="Hola Carlos, me interesan las clases virtuales. ¿Cómo funcionan?">Consultar clases virtuales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PROYECTOS ============ -->
+    <section class="projects" id="proyectos">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><span class="num">04</span> Proyectos musicales</p>
+        <h2 class="display">Del aula <em>al escenario</em>.</h2>
+        <p class="lead">Bandas, dúos y proyectos especiales donde Carlos toca. Cada uno con su identidad, su repertorio y su público.</p>
+      </header>
+
+      <div class="mag">
+        <!-- Alud -->
+        <article class="proj proj--alud reveal">
+          <figure class="ph proj-img" data-slot="proyecto-alud" data-ratio="16/10" data-label="Foto o logo de Alud" data-note="Gran formato · 16:10"></figure>
+          <div class="proj-body">
+            <span class="proj-idx" aria-hidden="true">A</span>
+            <p class="proj-tag">Proyecto musical</p>
+            <h3>Alud</h3>
+            <p class="proj-desc ph-text">Descripción, integrantes y repertorio pendientes.</p>
+            <a class="proj-link" href="#contacto" data-wa="Hola Carlos, quiero saber más sobre Alud.">Conocer el proyecto <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- Hurlingham Blues Society -->
+        <article class="proj proj--hbs reveal">
+          <figure class="ph proj-img" data-slot="proyecto-hurlingham" data-ratio="4/5" data-label="Foto o logo de Hurlingham Blues Society" data-note="Vertical · 4:5"></figure>
+          <div class="proj-body">
+            <span class="proj-idx" aria-hidden="true">H</span>
+            <p class="proj-tag">Proyecto musical</p>
+            <h3>Hurlingham <em>Blues</em> Society</h3>
+            <p class="proj-desc ph-text">Descripción, integrantes y repertorio pendientes.</p>
+            <a class="proj-link" href="#contacto" data-wa="Hola Carlos, quiero saber más sobre Hurlingham Blues Society.">Conocer el proyecto <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- Memphis Rockers -->
+        <article class="proj proj--mem reveal">
+          <figure class="ph proj-img" data-slot="proyecto-memphis" data-ratio="21/9" data-label="Foto o logo de Memphis Rockers" data-note="Panorámica · 21:9"></figure>
+          <div class="proj-body">
+            <span class="proj-idx" aria-hidden="true">M</span>
+            <p class="proj-tag">Tributo</p>
+            <h3>Memphis Rockers <em>Tribute to Elvis</em></h3>
+            <p class="proj-desc ph-text">Descripción, integrantes y repertorio pendientes.</p>
+            <a class="proj-link" href="#contacto" data-wa="Hola Carlos, quiero saber más sobre Memphis Rockers Tribute to Elvis.">Conocer el proyecto <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- Dúos -->
+        <article class="proj proj--duo reveal">
+          <figure class="ph proj-img" data-slot="proyecto-duos" data-ratio="1/1" data-label="Foto del dúo" data-note="Cuadrada · 1:1"></figure>
+          <div class="proj-body">
+            <span class="proj-idx" aria-hidden="true">D</span>
+            <p class="proj-tag">Formato reducido</p>
+            <h3>Dúos</h3>
+            <p class="proj-desc">Propuesta en formato dúo para eventos y espacios íntimos. <span class="ph-text">Detalle de formaciones y repertorio pendiente.</span></p>
+            <a class="proj-link" href="#contacto" data-wa="Hola Carlos, me interesa contratar un dúo. ¿Qué opciones tenés?">Consultar por dúos <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- Eventos -->
+        <article class="proj proj--evt reveal">
+          <figure class="ph proj-img" data-slot="proyecto-eventos" data-ratio="3/2" data-label="Foto de agrupación para eventos" data-note="Horizontal · 3:2"></figure>
+          <div class="proj-body">
+            <span class="proj-idx" aria-hidden="true">E</span>
+            <p class="proj-tag">Para eventos</p>
+            <h3>Agrupaciones <em>para eventos</em></h3>
+            <p class="proj-desc">Propuestas musicales para celebraciones y presentaciones. <span class="ph-text">Formatos disponibles por confirmar.</span></p>
+            <a class="proj-link" href="#contacto" data-wa="Hola Carlos, quiero consultar por una agrupación para un evento.">Consultar por eventos <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 6. MÚSICA / AUDIOVISUAL ============ -->
+    <section class="media" id="audiovisual">
+      <header class="sec-head sec-head--row reveal">
+        <div>
+          <p class="eyebrow"><span class="num">05</span> Escuchar y ver</p>
+          <h2 class="display">Mejor <em>sonando</em>.</h2>
+        </div>
+        <p class="lead">Presentaciones, interpretaciones, ensayos y clips de guitarra, bajo y ukelele. Los videos se reproducen solo cuando vos lo decidís.</p>
+      </header>
+
+      <div class="media-grid">
+        <div class="video video--main reveal" data-video="video-destacado" data-label="Video destacado" data-note="Presentación en vivo o interpretación">
+        </div>
+        <div class="video reveal" data-video="video-1" data-label="Clip de guitarra"></div>
+        <div class="video reveal" data-video="video-2" data-label="Clip de bajo"></div>
+        <div class="video reveal" data-video="video-3" data-label="Clip de ukelele"></div>
+      </div>
+
+      <ul class="platforms reveal" aria-label="Plataformas">
+        <li><a class="plat" data-social="youtube" href="#contacto"><span>YouTube</span><em>Próximamente</em></a></li>
+        <li><a class="plat" data-social="instagram" href="#contacto"><span>Instagram</span><em>Próximamente</em></a></li>
+        <li><a class="plat" data-social="spotify" href="#contacto"><span>Spotify</span><em>Próximamente</em></a></li>
+      </ul>
+    </section>
+
+    <!-- ============ 7. EN VIVO ============ -->
+    <section class="live" id="en-vivo">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><span class="num">06</span> En vivo</p>
+        <h2 class="display">La energía <em>del escenario</em>.</h2>
+      </header>
+
+      <div class="gallery" role="list">
+        <figure class="ph g g1 reveal" role="listitem" data-slot="vivo-1" data-ratio="4/5" data-label="Presentación en vivo" data-note="4:5"></figure>
+        <figure class="ph g g2 reveal" role="listitem" data-slot="vivo-2" data-ratio="16/10" data-label="Presentación en vivo" data-note="16:10"></figure>
+        <figure class="ph g g3 reveal" role="listitem" data-slot="vivo-3" data-ratio="1/1" data-label="Presentación en vivo" data-note="1:1"></figure>
+        <figure class="ph g g4 reveal" role="listitem" data-slot="vivo-4" data-ratio="3/4" data-label="Presentación en vivo" data-note="3:4"></figure>
+        <figure class="ph g g5 reveal" role="listitem" data-slot="vivo-5" data-ratio="16/10" data-label="Presentación en vivo" data-note="16:10"></figure>
+        <figure class="ph g g6 reveal" role="listitem" data-slot="vivo-6" data-ratio="4/5" data-label="Presentación en vivo" data-note="4:5"></figure>
+      </div>
+
+      <!-- TESTIMONIOS: sección preparada para opiniones auténticas de alumnos u organizadores.
+           Agregar solo cuando existan testimonios reales y con permiso de quien los dio. -->
+    </section>
+
+    <!-- ============ 8. CONTRATAR ============ -->
+    <section class="hire" id="contratar">
+      <div class="hire-inner">
+        <header class="reveal">
+          <p class="eyebrow"><span class="num">07</span> Contrataciones</p>
+          <h2 class="display">Música para <em>tu fecha</em>.</h2>
+          <p class="lead">Si estás organizando un evento, una celebración o una noche de música en vivo, contanos qué tenés en mente y buscamos el formato que mejor encaje.</p>
+        </header>
+
+        <ul class="hire-list reveal">
+          <li><span>Dúos</span><small>Formato reducido para espacios íntimos</small></li>
+          <li><span>Bandas</span><small>Proyectos musicales con formación completa</small></li>
+          <li><span>Eventos y presentaciones</span><small>Formatos y repertorios a confirmar</small></li>
+        </ul>
+
+        <div class="hire-cta reveal">
+          <a class="btn btn-solid btn-lg" href="#contacto" data-wa="Hola Carlos, quiero consultar por una fecha para un evento. Te cuento: ">Consultar por una fecha <span aria-hidden="true">→</span></a>
+          <p class="note">Sin compromiso. Disponibilidad, formato y condiciones se confirman por consulta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><span class="num">08</span> Contacto</p>
+        <h2 class="display">Hablemos de <em>música</em>.</h2>
+        <p class="lead">Elegí qué querés consultar y escribinos. La respuesta llega por WhatsApp.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="intents reveal" role="group" aria-label="Motivo de consulta">
+          <button type="button" class="intent" data-intent="Clases de guitarra, bajo o ukelele"><span>Clases</span><b>Guitarra, bajo o ukelele</b></button>
+          <button type="button" class="intent" data-intent="Clases presenciales o virtuales"><span>Modalidad</span><b>Presencial o virtual</b></button>
+          <button type="button" class="intent" data-intent="Contratar un dúo o una banda"><span>Contratar</span><b>Un dúo o una banda</b></button>
+          <button type="button" class="intent" data-intent="Eventos y presentaciones"><span>Eventos</span><b>Presentaciones y fechas</b></button>
+        </div>
+
+        <form class="form reveal" id="form" novalidate>
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" maxlength="80" />
+            <p class="err" id="e-nombre" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-motivo">Motivo de consulta</label>
+            <select id="f-motivo" name="motivo" required>
+              <option value="">Elegí una opción</option>
+              <option>Clases de guitarra, bajo o ukelele</option>
+              <option>Clases presenciales o virtuales</option>
+              <option>Contratar un dúo o una banda</option>
+              <option>Eventos y presentaciones</option>
+              <option>Otro</option>
+            </select>
+            <p class="err" id="e-motivo" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-mensaje">Mensaje</label>
+            <textarea id="f-mensaje" name="mensaje" rows="4" required minlength="10" maxlength="600"></textarea>
+            <p class="err" id="e-mensaje" role="alert"></p>
+          </div>
+          <button class="btn btn-solid btn-lg" type="submit">Enviar por WhatsApp <span aria-hidden="true">→</span></button>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <ul class="channels reveal">
+        <li><span>WhatsApp</span><a id="ch-wa" href="#contacto" data-wa="Hola Carlos, quiero hacerte una consulta.">Escribir por WhatsApp</a></li>
+        <li><span>Correo</span><a id="ch-mail" href="#contacto">Correo por definir</a></li>
+        <li><span>Redes</span>
+          <div class="socials">
+            <a data-social="instagram" href="#contacto">Instagram</a>
+            <a data-social="youtube" href="#contacto">YouTube</a>
+            <a data-social="spotify" href="#contacto">Spotify</a>
+            <a data-social="facebook" href="#contacto">Facebook</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-brand">
+      <img src="assets/img/orfeo-logo.webp" width="64" height="64" loading="lazy" alt="Orfeo · Música y Arte" />
+      <p><b>Carlos Emmanuel Flamenco</b><br />Músico · Profesor de guitarra, bajo y ukelele</p>
     </div>
+    <p class="foot-copy">© <span id="year">2026</span> Carlos Emmanuel Flamenco. Todos los derechos reservados.</p>
+    <a class="foot-top" href="#inicio">Volver arriba ↑</a>
+  </footer>
 
-</header>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <script defer src="lib/manifest.js?v=20261026"></script>
+  <script defer src="main.js?v=20261026"></script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </body>
 </html>
